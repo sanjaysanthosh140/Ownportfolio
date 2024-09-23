@@ -1,0 +1,255 @@
+* {
+	margin: 0px;
+	padding: 0px; 
+}
+
+body {
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 400;
+ 	scroll-behavior: smooth;
+}
+
+#navbar{
+	background-color: #BE3144;
+	display: flex;
+	position: fixed;
+ 	top: 0; 
+ 	left: 0; 
+	justify-content: flex-end;
+	height: 70px;
+	width: 100%;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+	margin-right: 5px;
+	margin-top: 17px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #F0F0F0;
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	padding-right: 35px;
+	display: block;
+}
+
+#welcome-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 350px;
+	background-color: #202023;
+	line-height: 50px;
+}
+
+#welcome-section h1{
+	font-weight: bold;
+	font-family:  'Raleway', sans-serif;
+	text-align: center;
+	font-size: 33px; 
+	color: #F0F0F0;
+}
+
+#welcome-section p{
+	font-size: 28px;
+	color: #A43040;
+	font-weight: 100;
+	font-style: italic;
+}
+
+#projects{
+	background-color: #45567D;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#projects h1{
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px; 
+	text-align: center;
+	color: #F0F0F0;
+	max-width: 450px;
+	margin: 10px auto; 
+	border-bottom: 4px solid #F0F0F0;  
+}
+
+img{
+	width: 90%;
+	display: block;
+}
+
+#myprojects{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 50px;
+	margin: 40px auto;
+	max-width: 1280px;
+	width: 100%;
+}
+
+.project-tile{
+/* 	background-color: #303841; */
+ 	border-radius: 5px;
+ 	text-decoration: none;
+}
+
+#myprojects img{
+	height: 180px;
+ 	width: 95%;
+  margin-left: 8px;
+  border-radius: 3px;
+ 	object-fit: contain;
+}
+
+.project-tile p{
+	color: #D0D2D3;
+  background-color: #303841;
+  max-width: 375px;
+    transition: color 0.3s ease-out;
+     padding: 10px 0px; 
+    text-align: center;
+    font-size: 23px;
+  border-radius: 2px;
+  margin-top: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#contact{
+	background-color: #303841;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+  	width: 100%;
+  	height: 80vh;
+}
+
+#contact h1{
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	font-size: 33px; 
+	text-align: center;
+	color: #F0F0F0;
+	max-width: 600px;
+	margin: 10px auto; 
+}
+
+#contact p{
+	font-style: italic;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: #F0F0F0;
+	max-width: 600px;
+	margin: 10px auto; 
+}
+
+#my-contact-links{
+	display: flex;
+  	justify-content: center;
+  	width: 100%;
+  	max-width: 1000px;
+  	margin-top: 50px;
+  	flex-wrap: wrap;
+}
+
+#my-contact-links a{
+	text-decoration: none;
+	color: #F0F0F0;
+	font-size: 28px;
+	display: inline-block;
+  	border-radius: 2px;
+  	padding-right: 15px;
+}
+
+i{
+	padding-right: 7px;
+}
+
+footer {
+ 	font-weight: 300;
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	padding: 20px;
+ 	background-color: #303841;
+ 	border-top: 4px solid #BE3144;
+}
+
+footer p{
+	color: #DCDDDD;
+}
+
+@media (max-width: 750px){
+	#navbar{
+		margin: 0;
+    left: 10px;
+    justify-content: center;
+	}
+	nav ul{
+		margin-right: 5px;
+		margin-top: 0;
+	}
+	nav a{
+		font-size: 17px;
+		padding-right: 10px; 
+	}
+	#welcome-section h1{
+		font-size: 22px;
+	}
+	#welcome-section p{
+		font-size: 18px;
+	}
+	#projects{
+		padding-top: 30px;
+		padding-bottom: 13px;
+	}
+	#projects h1{
+		font-size: 30px; 
+		max-width: 400px;
+		margin: 10px auto;   
+	}
+	#myprojects{
+		grid-gap: 30px;
+		margin: 20px auto;
+	}
+	.project-tile p{
+		font-size: 19px;
+	}
+	#contact h1{
+		font-size: 38px; 
+		margin: 7px auto; 
+	}
+	#contact p{
+		font-size: 18px;
+		margin: 7px auto; 
+	}
+	#my-contact-links{
+  	margin-top: 30px;
+	}
+	#my-contact-links a{
+		font-size: 28px;
+  		padding-right: 13px;
+	}
+  
+	i{
+		padding-right: 4px;
+	}
+	footer {
+ 		justify-content: center;
+ 		padding: 12px;
+	}
+}
+
+@media (max-width: 710px) and (min-width: 300px) {
+  .project-tile p {
+    width: 95%;
+    margin: 2px auto;
+  }
+}
